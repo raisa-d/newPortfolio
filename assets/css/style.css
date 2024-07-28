@@ -101,9 +101,9 @@ nav {
 }
 
 /* logo styling */
-
-#logo {z-index:1;}
+#logo {z-index: 1;}
 .cloud{ 
+    background: url(/assets/images/cloud.png);
     margin-top:7rem;
     width:35rem;
     height:12rem;
@@ -145,7 +145,9 @@ nav {
 
  /* PROJECTS */
  .project {
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2rem;
     flex-flow: column;
     align-items:center;
     justify-content: center;
