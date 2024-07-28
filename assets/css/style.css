@@ -18,17 +18,19 @@ li {
 /* FLEXBOX */
 .flex {display:flex}
 
+.col {flex-flow: column;}
+
 /* HEADER */
 /* NAVIGATION */
 nav {
     justify-content:space-around;
-    font-size: 1.8rem;
     align-items:center;
+    font-size: 1.8rem;
 }
 /* nav element layout */
 #navUL, .socialsUL {
-    padding:0;
     justify-content: space-evenly;
+    padding:0;
 }
 
 .socialsUL {width: 20%;}
@@ -36,7 +38,14 @@ nav {
 
 /* size of intro section */
 #intro {
-    height: 50rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projects {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-evenly;
 }
 
 /*** STYLING ***/
@@ -48,33 +57,109 @@ nav {
     padding: 1rem;
 }
 
-/* styling nav elements on hover */
-#navUL li a:hover {
-    /* color: purple; */
-    background:#ECEFF1;
-    box-shadow: 0.8rem 0.8rem rgb(164, 189, 226);
-    border-radius:100px;
-}
+    /* styling nav elements on hover */
+    #navUL li a:hover {
+        /* color: purple; */
+        background:#ECEFF1;
+        box-shadow: 0.8rem 0.8rem rgb(164, 189, 226);
+        border-radius:10rem;
+    }
 
-/* background image for sky section */
+        /* social media styling */
+        .fa-brands {
+            color: purple;
+            background: white;
+            border-radius: 50%;
+            padding: 1rem;
+            border: 0.25rem solid white;
+        }
+
+        .fa-brands:hover {
+            background: rgba(255, 255, 255, 0.379);
+        }
+
+/* background images */
 #sky {
-    background-image: url(/assets/images/sky.jpg);
-    background-size: cover;
+    background: linear-gradient(to bottom right, #eadc8d, rgb(240, 223, 243), rgb(185, 213, 242), rgb(72, 184, 218));
+    /* background-image: url(/assets/images/sky.jpg); */
+    /* background-size: cover; */
 }
 
-/* social media icons */
-.fa-brands {
-    color: purple;
-    background: white;
-    border-radius: 50%;
-    padding: 1rem;
-    border: 0.25rem solid white;
+#sea {
+    background: linear-gradient(to bottom, rgb(105, 234, 206), rgb(1, 167, 203), rgb(4, 149, 190));
+    background-image: url(/assets/images/water.jpg);
 }
 
-.fa-brands:hover {
-    background: rgba(255, 255, 255, 0.379);
+#projects {
+    background: linear-gradient(to bottom, rgb(4, 149, 190), rgb(3, 95, 120), rgb(0, 61, 60))
 }
+
+/* INTRO SECTION STYLING */
+
+#intro h1 {
+    font-size:3rem;
+}
+
+/* logo styling */
+
+#logo {z-index:1;}
+.cloud{ 
+    margin-top:7rem;
+    width:35rem;
+    height:12rem;
+    background:#fff;
+    box-shadow: 1rem 1rem rgba(0,0,0,0.2);
+    border-radius:10rem;
+    z-index:1;
+ }
+ .cloud::after, .cloud::before{
+     content:"";
+     position:relative;
+     display:inline-block;
+     background:inherit;
+     border-radius:inherit;
+ }
+ .cloud::after{
+    width:10rem;
+    height:10rem;
+    left:5rem;
+    bottom: 34rem;
+}
+ .cloud::before{
+     width:18rem;
+     height:18rem;
+     top: -7rem;
+     left:13rem;
+ }
+ 
+ #logo {
+    position:relative;
+    bottom: 18rem;
+    left: 4rem;
+ }
+
+ /* PORTFOLIO SECTION STYLING */
+ #portfolio {
+    text-align:center;
+ }
+
+ /* PROJECTS */
+ .project {
+    border: 1px solid black;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center;
+    justify-content: space-evenly;
+ }
+
+ .projectLinks {
+    padding:0;
+    justify-content: space-evenly;
+    width:100%;
+ }
 
 /* NOTES 
 - whichever page you're currently on, the nav element for it should be styled differently
+- make it so when you click element, scrolls down to that part of page automatically
+- seashell design to hold projects? or coral?
 */

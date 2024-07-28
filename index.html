@@ -10,12 +10,13 @@
     <meta name="robots" content="follow, index">
 		<script src="https://kit.fontawesome.com/b06dcc32db.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="flex col">
     <div id="sky">
         <header>
             <nav class="flex">
                 <ul id="navUL" class="flex">
-                    <li><a href="#">work</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#">about</a></li>
                     <li><a href="#">services</a></li>
                     <li><a href="#">contact</a></li>
@@ -41,21 +42,63 @@
         </header>
 
         <!-- intro -->
-        <section id="intro">
+        <section id="intro" class="flex col">
             <li>
-                <a href="index.html">
-                    <img src="/assets/images/logo.png" alt="Raisa Dorzback Software Engineer">
-                </a>
+                <div class="cloud">
+                    <img src="/assets/images/logo/png/logo-black.png" alt="Raisa Dorzback Software Engineer" id="logo">
+                </div>
             </li>
+            <h1>I'm Raisa, your next web developer.</h1>
         </section>
     </div>
 
-    <main>
+    <div id="sea">
         <!-- work -->
-        <!-- about -->
-        <!-- services -->
-        <!-- contact -->
+        <h1 id="portfolio">Portfolio</h1>
+    </div>
+    <!-- container for projects -->
+    <main id="projects" class="flex">
+        <!-- project -->
+        <div class="project flex">
+            <h2>Project Title</h2>
+            <img src="#" alt="Project">
+            <ul class="projectLinks flex">
+                <li><a href="">Repo</a></li>
+                <li><a href="">Live</a></li>
+            </ul>
+        </div>
+        <!-- project -->
+        <div class="project flex">
+            <h2>Project Title</h2>
+            <img src="#" alt="Project">
+            <ul class="projectLinks flex">
+                <li><a href="">Repo</a></li>
+                <li><a href="">Live</a></li>
+            </ul>
+        </div>
+        <!-- project -->
+        <div class="project flex">
+            <h2>Project Title</h2>
+            <img src="#" alt="Project">
+            <ul class="projectLinks flex">
+                <li><a href="">Repo</a></li>
+                <li><a href="">Live</a></li>
+            </ul>
+        </div>
+        <!-- project -->
+        <div class="project flex">
+            <h2>Project Title</h2>
+            <img src="#" alt="Project">
+            <ul class="projectLinks flex">
+                <li><a href="">Repo</a></li>
+                <li><a href="">Live</a></li>
+            </ul>
+        </div>
     </main>
+    
+    <!-- about -->
+    <!-- services -->
+    <!-- contact -->
     
     <footer>
         <ul class="flex socialsUL">
