@@ -61,20 +61,26 @@ nav {
 /* styling each nav element */
 #navUL li a {
     text-decoration: none;
-    font-weight:bold;
     padding: 2rem 3rem;
     background:#ECEFF1;
     border-radius:5rem;
     color:black;
-    background: url(/assets/images/cloud.png);
+    background: url(/assets/images/pinkClouds.png);
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
+}
+
+#navUL li:nth-child(2), #navUL li:nth-child(4) {
+    position:relative;
+    top:3.5rem;
 }
 
     /* styling nav elements on hover */
     #navUL li a:hover {
         background:#a4daef;
-        background: url(/assets/images/cloud2.png);
+        background: url(/assets/images/pinkClouds.png);
+        font-weight:bold;
         background-size:cover;
         background-position:center;
     }
@@ -159,10 +165,15 @@ nav {
     nav {
         flex-flow:column;
      }
+
+    #navUL li:nth-child(2), #navUL li:nth-child(4) {
+        position:static;
+    }
  }
 
 /* NOTES 
 - whichever page you're currently on, the nav element for it should be styled differently
 - make it so when you click element, scrolls down to that part of page automatically
 - seashell design to hold projects? or coral? or bubbles?
+- what if when you hover over the clouds for each page, it starts raining from that cloud?
 */
