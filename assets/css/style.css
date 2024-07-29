@@ -46,6 +46,7 @@ nav {
     flex-flow: row wrap;
     align-items: center;
     justify-content:space-evenly;
+    padding-bottom:2rem;
 }
 
 /*** STYLING ***/
@@ -101,52 +102,22 @@ nav {
 }
 
 /* logo styling */
-#logo {z-index: 1;}
-.cloud{ 
-    background: url(/assets/images/cloud.png);
-    margin-top:7rem;
-    width:35rem;
-    height:12rem;
-    background:#fff;
-    box-shadow: 1rem 1rem rgba(0,0,0,0.2);
-    border-radius:10rem;
-    z-index:1;
- }
- .cloud::after, .cloud::before{
-     content:"";
-     position:relative;
-     display:inline-block;
-     background:inherit;
-     border-radius:inherit;
- }
- .cloud::after{
-    width:10rem;
-    height:10rem;
-    left:5rem;
-    bottom: 34rem;
-}
- .cloud::before{
-     width:18rem;
-     height:18rem;
-     top: -7rem;
-     left:13rem;
- }
- 
- #logo {
+#logo {
     position:relative;
-    bottom: 18rem;
-    left: 4rem;
- }
+    top:3rem;
+}
 
  /* PORTFOLIO SECTION STYLING */
  #portfolio {
+    margin-top:4rem;
     text-align:center;
  }
 
  /* PROJECTS */
  .project {
-    border: 1px solid white;
-    border-radius: 50%;
+    border: 1px dotted white;
+    margin: 1rem;
+    /* border-radius: 50%; */
     padding: 2rem;
     flex-flow: column;
     align-items:center;
@@ -163,5 +134,5 @@ nav {
 /* NOTES 
 - whichever page you're currently on, the nav element for it should be styled differently
 - make it so when you click element, scrolls down to that part of page automatically
-- seashell design to hold projects? or coral?
+- seashell design to hold projects? or coral? or bubbles?
 */
