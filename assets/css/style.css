@@ -34,7 +34,15 @@ nav {
 }
 
 .socialsUL {width: 20%;}
-#navUL {width: 80%;}
+#navUL {
+    width: 80%;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+#navUL li {
+    margin: 2rem 0;
+}
 
 /* size of intro section */
 #intro {
@@ -53,20 +61,21 @@ nav {
 /* styling each nav element */
 #navUL li a {
     text-decoration: none;
-    color: purple;
     font-weight:bold;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
+    background:#ECEFF1;
+    border-radius:5rem;
+    color:black;
+    background: url(/assets/images/cloud.png);
+    background-size:cover;
+    background-position:center;
 }
 
     /* styling nav elements on hover */
     #navUL li a:hover {
-        background:#ECEFF1;
-        /* box-shadow: 0.8rem 0.8rem rgb(164, 189, 226); */
-        border-radius:5rem;
-        color:black;
-        background: url(/assets/images/cloud.png);
-        background-size:110%;
-        /* background-size:cover; */
+        background:#a4daef;
+        background: url(/assets/images/cloud2.png);
+        background-size:cover;
         background-position:center;
     }
 
@@ -104,6 +113,9 @@ nav {
 
 #intro h1 {
     font-size:3rem;
+    color:#fff;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
 }
 
 /* logo styling */
@@ -114,9 +126,9 @@ nav {
     align-items: center;
     height:25rem;
     width:25rem;
+    background:#ffffff27;
     position:relative;
-    top:2.5rem;
-    background:#ffffff49;
+    top:3rem;
 }
 
  /* PORTFOLIO SECTION STYLING */
@@ -129,7 +141,6 @@ nav {
  .project {
     border: 1px dotted white;
     margin: 1rem;
-    /* border-radius: 50%; */
     padding: 2rem;
     flex-flow: column;
     align-items:center;
@@ -141,6 +152,13 @@ nav {
     padding:0;
     justify-content: space-evenly;
     width:100%;
+ }
+
+ /*** MEDIA QUERIES ***/
+ @media all and (max-width:771px) {
+    nav {
+        flex-flow:column;
+     }
  }
 
 /* NOTES 
