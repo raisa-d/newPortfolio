@@ -145,19 +145,61 @@ nav {
 
  /* PROJECTS */
  .project {
-    border: 1px dotted white;
+    padding: 2rem 0;
     margin: 1rem;
-    padding: 2rem;
     flex-flow: column;
     align-items:center;
-    justify-content: center;
-    justify-content: space-evenly;
+    background: url(/assets/images/clam.png) no-repeat;
+    background-size:cover;
+    background-position:center;
+ }
+
+ .project h2, .projectLinks a {
+    background: #ffffff89;
+    padding: 1rem;
+    border-radius: 3rem;
+ }
+
+ .project img {
+    border-radius:1rem;
+    width: 25rem;
+    border: 1px solid rgba(255, 255, 255, 0.538);
+    box-shadow: rgba(5, 5, 0, 0.487) 0 0 9rem 2rem;
+}
+
+ .pearl {
+    background: #93eadc;
+    background: radial-gradient(#93eadc, #62e4ce, #fff);
+    height: 33rem;
+    width: 33rem;
+    margin: 5rem 8rem;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
  }
 
  .projectLinks {
-    padding:0;
+    position:relative;
+    top: 2.4rem;
     justify-content: space-evenly;
     width:100%;
+    padding:0;
+ }
+
+ .projectLinks a {
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background: #6cada282;
+    letter-spacing: 0.2rem;
+ }
+
+ .projectLinks a:hover {
+    background: #0675638d;
+    color: #fff;
  }
 
  /*** MEDIA QUERIES ***/
