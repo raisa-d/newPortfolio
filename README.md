@@ -57,6 +57,7 @@ The following design elements are my next priorities:
 - Code about, services, and contact sections/pages
 - Rework javascript to use OOP to make it more clear and readable
 - Possibly restyle the projects section
+- Make sure styling is responsive
 
 ## Lessons Learned
 So far, I have learned that I need to set a timer and force myself to stop coding! I got very excited working on this design but I need to remember to take care of myself too.
