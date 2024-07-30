@@ -52,3 +52,8 @@ function scrollDown(event) {
         behavior:'smooth'
     })
 }
+
+/*
+NOTES:
+- change cloud related code to an object with methods to make it more readable
+*/
