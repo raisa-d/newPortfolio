@@ -49,6 +49,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-top:4rem;
+    width: 100%;
 }
 
 #projects {
@@ -103,8 +104,6 @@ nav {
 #sky {
     background: linear-gradient(to bottom right, #eadc8d, rgb(240, 223, 243), rgb(185, 213, 242), rgb(72, 184, 218));
     background: linear-gradient(to bottom, #eeaf61, #fb9062, #ee5d6c, #ce4993, #3a68b8);
-    /* background-image: url(/assets/images/sky.jpg); */
-    /* background-size: cover; */
 }
 
 #sea {
@@ -113,7 +112,7 @@ nav {
 }
 
 #projects {
-    background: linear-gradient(to bottom, rgb(4, 149, 190), rgb(3, 95, 120), rgb(0, 61, 60))
+    background: linear-gradient(to bottom, rgb(4, 149, 190), rgb(3, 95, 120), rgb(0, 61, 60), #e4cba7);
 }
 
 /* INTRO SECTION STYLING */
@@ -141,6 +140,9 @@ nav {
  #portfolio {
     margin-top:4rem;
     text-align:center;
+    text-transform: uppercase;
+    text-shadow: #eadc8d 0 .5rem 0.5rem;
+    font-size: 4rem;
  }
 
  /* PROJECTS */
@@ -193,12 +195,12 @@ nav {
     text-transform: lowercase;
     padding: 1rem 2rem;
     font-weight: bold;
-    background: #6cada282;
+    background: #eeaf61bf;
     letter-spacing: 0.2rem;
  }
 
  .projectLinks a:hover {
-    background: #0675638d;
+    background:#5e968d;
     color: #fff;
  }
 
@@ -214,10 +216,9 @@ nav {
  }
 
 /* NOTES 
-- whichever page you're currently on, the nav element for it should be styled differently
 - make it so when you click element, scrolls down to that part of page automatically
 - what if when you hover over the clouds for each page, it starts raining from that cloud?
 - add sand/land area, transition to it by using the water pic again but flipped upside down so it’s like a shore, or find a similar one that’s a shore
-- seashell design to hold projects? or coral? or bubbles?
 - project containers could be open oysters/clams and inside the opening is the project in a white pearl/circle container?
+  - if don't like this maybe coral or bubbles
 */
