@@ -2,7 +2,7 @@ const clouds = document.querySelectorAll('.cloud');
 
 clouds.forEach(cloud => {
     cloud.addEventListener('mouseover', startRain);
-    cloud.addEventListener('mouseleave', stopRain);
+    cloud.addEventListener('mouseout', stopRain);
 });
 
 function randomText() {
@@ -12,20 +12,20 @@ function randomText() {
 }
 
 function createRaindrop(cloud) {
-    let e = document.createElement('div');
+    let div = document.createElement('div');
     let left = Math.floor(Math.random() * 90);
     let size = Math.random() * 1;
     let duration = Math.random() * 1;
 
-    e.classList.add('text');
-    cloud.appendChild(e);
-    e.innerText = randomText();
-    e.style.left = (left * 0.1) + 'rem';
-    e.style.fontSize = 0.5 + size + 'em';
-    e.style.animationDuration = 1 + duration + 's';
+    div.classList.add('text');
+    cloud.appendChild(div);
+    div.innerText = randomText();
+    div.style.left = (left * 0.1) + 'rem';
+    div.style.fontSize = 0.5 + size + 'em';
+    div.style.animationDuration = 1 + duration + 's';
 
     setTimeout(() => {
-        cloud.removeChild(e);
+        cloud.removeChild(div);
     }, 2000);
 }
 

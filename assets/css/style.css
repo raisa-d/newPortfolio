@@ -183,6 +183,7 @@ nav {
     display:flex;
     justify-content:center;
     align-items:center;
+    border: .3rem solid rgba(255, 255, 255, 0.582);
  }
 
  .projectLinks {
@@ -260,6 +261,7 @@ nav {
     transform-origin:bottom;
     color:#f9bbc9;
     animation: animate 2s linear forwards;
+    order:1;
  }
 
  @keyframes animate {
