@@ -41,3 +41,14 @@ function stopRain() {
     const cloud = this;
     clearInterval(cloud.rainInterval);
 }
+
+// scrolling down animation
+document.querySelectorAll('.scrolly a').forEach(a => a.addEventListener('click', scrollDown));
+
+function scrollDown(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    document.getElementById(targetId).scrollIntoView({
+        behavior:'smooth'
+    })
+}
