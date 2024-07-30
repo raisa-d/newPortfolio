@@ -68,13 +68,13 @@ nav {
 #navUL li a {
     text-decoration: none;
     padding: 2rem 3rem;
-    background:#ECEFF1;
     border-radius:5rem;
     color:black;
+    /* background:#ECEFF1;
     background: url(/assets/images/pinkClouds.png);
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; */
 }
 
 #navUL li:nth-child(2), #navUL li:nth-child(4) {
@@ -84,11 +84,11 @@ nav {
 
     /* styling nav elements on hover */
     #navUL li a:hover {
-        background:#a4daef;
+        /* background:#a4daef;
         background: url(/assets/images/pinkClouds.png);
-        font-weight:bold;
         background-size:cover;
-        background-position:center;
+        background-position:center; */
+        font-weight:bold;
     }
 
         /* social media styling */
@@ -216,6 +216,55 @@ nav {
 
     #navUL li:nth-child(2), #navUL li:nth-child(4) {
         position:static;
+    }
+ }
+
+ /* CLOUD STUFF */
+ .cloud {
+    width: 10rem;
+    height: 5rem;
+    flex-flow:column;
+    border-radius: 10rem;
+    filter: drop-shadow(0 0 3.5rem #103950);
+    z-index:1;
+ }
+
+ .cloud, .cloud::before {
+    background: #f9bbc9;
+ }
+
+ .cloud::before {
+    content: '';
+    position: absolute;
+    width: 3.5rem;
+    height: 3rem;
+    border-radius: 50%;
+    bottom: 3rem;
+    left: 1.5rem;
+    box-shadow: 3rem 0 0 .5rem #ffe0e6;
+ }
+
+ /* put nav words in front of cloud */
+ .cloud a {
+    z-index: 2;
+    align-self:center;
+ }
+
+ .text {
+    position:absolute;
+    top:1.5rem;
+    height:30rem;
+    line-height:2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 .5rem #f9bbc9, 0 0 1.5rem #f9bbc9, 0 0 3rem #f9bbc9;
+    transform-origin:bottom;
+    color:#f9bbc9;
+    animation: animate 2s linear forwards;
+ }
+
+ @keyframes animate {
+    100% {
+        transform: translateY(2.9rem) scale(0);
     }
  }
 
