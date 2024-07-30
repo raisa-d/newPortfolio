@@ -22,10 +22,16 @@ Pages:
 - Contact
 
 ## Development Stage
-As of 7/28/2024, I have designed and coded:
+7/28/2024: I have designed and coded:
 - Navigational styling
 - First pass at intro section
 - Layout for projects section
+
+7/30/2024:
+- I got really excited about an idea to make the clouds start raining on hover. I ended up switching the clouds from images to straight CSS and used CSS to create a sort of storm of letters, numbers, and symbols. I thought that would be cool because it's sort of like it's raining code! - I also had an idea of displaying the projects in clamshells as the pearls inside, which I made a reality! I think they're really cute, but am still playing with the idea of making them coral or bubbles. A friend of mine gave me an idea of putting the tech stack in bubbles which is also a great way to incorporate them. 
+- There is now an animation to scroll down from the nav elements to the parts of the page those sections are on.
+- Restyled the "repo" and "live" buttons.
+- Removed social media from the header and will have them only in the footer.
 
 ## Technologies Used
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
@@ -48,13 +54,12 @@ As of 7/28/2024, I have designed and coded:
 
 ## Optimizations
 The following design elements are my next priorities:
-- Style project containers in portfolio section
 - Code about, services, and contact sections/pages
-- Whichever page user is currently on should have a different styling in nav bar
-- When user clicks nav for something on current page, make it scroll down
+- Rework javascript to use OOP to make it more clear and readable
+- Possibly restyle the projects section
 
 ## Lessons Learned
-So far, I have learned that I need to set a timer and force myself to stop coding! I got very excited working on this design but I should have forced myself to take breaks.
+So far, I have learned that I need to set a timer and force myself to stop coding! I got very excited working on this design but I need to remember to take care of myself too.
 
 ## Resources
 Portfolios that inspired me:

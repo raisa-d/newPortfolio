@@ -6,7 +6,7 @@ clouds.forEach(cloud => {
 });
 
 function randomText() {
-    const text = '0123456789/\\|&+=-<>{}';
+    const text = 'abcdefghijklmnopqrstuvwxyz0123456789/\\|&+=-<>{}';
     const letter = text[Math.floor(Math.random() * text.length)];
     return letter;
 }
