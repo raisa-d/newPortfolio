@@ -70,11 +70,6 @@ nav {
     padding: 2rem 3rem;
     border-radius:5rem;
     color:black;
-    /* background:#ECEFF1;
-    background: url(/assets/images/pinkClouds.png);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat; */
 }
 
 #navUL li:nth-child(2), #navUL li:nth-child(4) {
@@ -84,10 +79,6 @@ nav {
 
     /* styling nav elements on hover */
     #navUL li a:hover {
-        /* background:#a4daef;
-        background: url(/assets/images/pinkClouds.png);
-        background-size:cover;
-        background-position:center; */
         font-weight:bold;
     }
 
@@ -160,18 +151,18 @@ nav {
     background-position:center;
  }
 
- .project h2, .projectLinks a {
-    background: #ffffff89;
-    padding: 1rem;
-    border-radius: 3rem;
- }
+    .project h2 {
+        background: #ffffff89;
+        padding: 1rem;
+        border-radius: 3rem;
+    }
 
- .project img {
-    border-radius:1rem;
-    width: 25rem;
-    border: 1px solid rgba(255, 255, 255, 0.538);
-    box-shadow: rgba(5, 5, 0, 0.487) 0 0 9rem 2rem;
-}
+        .project img {
+            border-radius:1rem;
+            width: 25rem;
+            border: 1px solid rgba(255, 255, 255, 0.538);
+            box-shadow: rgba(5, 5, 0, 0.487) 0 0 9rem 2rem;
+        }
 
  .pearl {
     background: #93eadc;
@@ -185,29 +176,35 @@ nav {
     align-items:center;
     border: .3rem solid rgba(255, 255, 255, 0.582);
  }
+ 
+    .project img, .projectLinks {
+        position: relative;
+        top:2rem;
+    }
 
- .projectLinks {
-    position:relative;
-    top: 2.4rem;
-    justify-content: space-evenly;
-    width:100%;
-    padding:0;
- }
+        .projectLinks {
+            justify-content: center;
+            width:100%;
+            top: 3rem;
+        }
 
- .projectLinks a {
-    text-decoration: none;
-    color: black;
-    text-transform: lowercase;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    background: #eeaf61bf;
-    letter-spacing: 0.2rem;
- }
+            .projectLinks a {
+                text-decoration: none;
+                color: black;
+                text-transform: lowercase;
+                padding: 1rem;
+                font-weight: bold;
+                background: #ffffff80;
+                border: .3rem dotted #fff;
+                border-radius: 5rem;
+                letter-spacing: 0.1rem;
+                margin:0.5rem;
+            }
 
- .projectLinks a:hover {
-    background:#5e968d;
-    color: #fff;
- }
+                .projectLinks a:hover {
+                    background:#467069;
+                    color: #fff;
+                }
 
  /*** MEDIA QUERIES ***/
  @media all and (max-width:771px) {
