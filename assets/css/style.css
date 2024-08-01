@@ -161,12 +161,12 @@ nav {
             border-radius:1rem;
             width: 25rem;
             border: 1px solid rgba(255, 255, 255, 0.538);
-            /* box-shadow: rgba(5, 5, 0, 0.487) 0 0 9rem 2rem; */
+            box-shadow: rgba(5, 5, 0, 0.211) 0 0 9rem 2rem;
         }
 
  .pearl {
     background: white;
-    background: radial-gradient(#e4fdfb, #fff);
+    background: linear-gradient(to bottom left, #fff, #dec8d2);
     height: 33rem;
     width: 33rem;
     margin: 5rem 8rem;
@@ -174,7 +174,7 @@ nav {
     display:flex;
     justify-content:center;
     align-items:center;
-    border: .3rem solid rgba(255, 255, 255, 0.582);
+    border: .2rem solid rgba(255, 255, 255, 0.5);
  }
  
     .project img, .projectLinks {
