@@ -161,12 +161,12 @@ nav {
             border-radius:1rem;
             width: 25rem;
             border: 1px solid rgba(255, 255, 255, 0.538);
-            box-shadow: rgba(5, 5, 0, 0.487) 0 0 9rem 2rem;
+            /* box-shadow: rgba(5, 5, 0, 0.487) 0 0 9rem 2rem; */
         }
 
  .pearl {
-    background: #93eadc;
-    background: radial-gradient(#93eadc, #62e4ce, #fff);
+    background: white;
+    background: radial-gradient(#e4fdfb, #fff);
     height: 33rem;
     width: 33rem;
     margin: 5rem 8rem;
@@ -190,11 +190,11 @@ nav {
 
             .projectLinks a {
                 text-decoration: none;
-                color: black;
+                color: white;
                 text-transform: lowercase;
                 padding: 1rem;
                 font-weight: bold;
-                background: #ffffff80;
+                background:#467069ac;
                 border: .3rem dotted #fff;
                 border-radius: 5rem;
                 letter-spacing: 0.1rem;
@@ -202,7 +202,7 @@ nav {
             }
 
                 .projectLinks a:hover {
-                    background:#467069;
+                    background: #467069;
                     color: #fff;
                 }
 
